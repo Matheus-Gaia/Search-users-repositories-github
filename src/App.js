@@ -26,6 +26,7 @@ function App() {
     try {
       const user = await axios.get(url)
       setUserData(user.data)
+      setErrSearch(false)
     } catch (err) {
       setErrSearch(true)
       setName('')
