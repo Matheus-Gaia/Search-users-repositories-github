@@ -28,6 +28,7 @@ function App() {
       setUserData(user.data)
     } catch (err) {
       setErrSearch(true)
+      setName('')
     }
   }
 
@@ -74,6 +75,7 @@ function App() {
       <MainIndex 
         reposData={reposData}
         starredData={starredData}
+        errSearch={errSearch}
       />
       <FooterIndex />
     </div>
